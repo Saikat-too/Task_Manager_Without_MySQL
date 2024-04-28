@@ -18,3 +18,4 @@ const createTask = (req , res) => {
 const getAllTasks = (req , res ) => {
     res.json(tasks);
 };
+
