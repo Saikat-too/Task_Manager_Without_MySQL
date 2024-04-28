@@ -1,0 +1,15 @@
+{
+  "name": "task_manager_without_mysql",
+  "version": "1.0.0",
+  "description": "A basic task maanger app project without mysql with node.js and express.js for my computer web technology course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
