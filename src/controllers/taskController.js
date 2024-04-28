@@ -52,3 +52,10 @@ const deleteTask = (req, res) => {
     tasks.splice(taskIndex, 1);
     res.sendStatus(204);
   };
+// Export function from the current module 
+  module.exports = {
+    createTask,
+    getAllTasks,
+    updateTask,
+    deleteTask
+  };
