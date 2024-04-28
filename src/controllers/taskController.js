@@ -28,4 +28,15 @@ const updateTask = (req, res) => {
     if (taskIndex === -1) {
       return res.status(404).json({ error: 'Task not found' });
     }
+
+    const updatedTask = {
+        ...tasks[taskIndex],
+        title: title || tasks[taskIndex].title,
+        description: description || tasks[taskIndex].description,
+        status: status || tasks[taskIndex].status
+    };
+
+    tasks[taskIndex] = updatedTask;
+    res.json(updatedTask);
 };
+
