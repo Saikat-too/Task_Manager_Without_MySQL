@@ -13,3 +13,8 @@ const createTask = (req , res) => {
     tasks.push(newTask);
     res.status(201).json(newTask);
 };
+
+// Sripting for getting task
+const getAllTasks = (req , res ) => {
+    res.json(tasks);
+};
