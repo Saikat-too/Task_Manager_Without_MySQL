@@ -9,3 +9,11 @@ app.use(express.json());
 // Setting up my express.js app to use the taskroutes to for request from 'tasks' path
 app.use('/tasks',taskroutes);
 
+// Starts an express.js server on the port
+const PORT = 3004;
+app.listen(PORT , () =>{
+
+    console.log('Server is running on the ${PORT}');
+
+
+});
