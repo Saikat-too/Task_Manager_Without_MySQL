@@ -1,7 +1,7 @@
 // Importing express for the script file
 
 const express = require('express');
-const taskController = require ('../controllers/taskController');
+const taskController = require ('../controllers/taskController.js');
 
 //Creating ne routing object
 const router = express.Router();
