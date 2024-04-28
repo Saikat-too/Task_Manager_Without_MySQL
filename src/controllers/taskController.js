@@ -40,3 +40,15 @@ const updateTask = (req, res) => {
     res.json(updatedTask);
 };
 
+//DwleteTask request 
+const deleteTask = (req, res) => {
+    const taskId = parseInt(req.params.id);
+    const taskIndex = tasks.findIndex(task => task.id === taskId);
+  
+    if (taskIndex === -1) {
+      return res.status(404).json({ error: 'Task not found' });
+    }
+  
+    tasks.splice(taskIndex, 1);
+    res.sendStatus(204);
+  };
