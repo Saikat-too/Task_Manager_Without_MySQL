@@ -14,7 +14,7 @@ const createTask = (req , res) => {
     res.status(201).json(newTask);
 };
 
-// Sripting for getting task
+// Sripting for getting task request
 const getAllTasks = (req , res ) => {
     res.json(tasks);
 };
